@@ -9,6 +9,7 @@ type RecipeResponse = {
   optional: string[];
   steps: string[];
   final_tip: string;
+  source?: "cache" | "ai";
 };
 
 const exampleSets = [
@@ -255,9 +256,21 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="flex flex-col gap-4 border-b border-neutral-200 pb-6 md:flex-row md:items-start md:justify-between">
                   <div>
-                    <div className="mb-2 inline-flex rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-600">
-                      Receta generada
-                    </div>
+                   <div className="mb-2 flex flex-wrap gap-2">
+                    <span className="inline-flex rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-600">
+                        Receta generada
+                     </span>
+
+                      {recipe.source === "cache" ? (
+                       <span className="inline-flex rounded-full border border-green-200 bg-green-50 px-3 py-1 text-xs font-medium text-green-700">
+                         Desde cache
+                       </span>
+                       ) : recipe.source === "ai" ? (
+                        <span className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                           Generada con IA
+                         </span>
+                      ) : null}
+                   </div>
                     <h2 className="text-3xl font-bold tracking-tight">
                       {recipe.title}
                     </h2>

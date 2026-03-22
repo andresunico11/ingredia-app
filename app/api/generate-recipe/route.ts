@@ -5,6 +5,8 @@ import {
   normalizeIngredients,
   normalizeStyle,
 } from "@/lib/validators";
+import { buildRecipeKey } from "@/lib/recipe-key";
+import { findCachedRecipe, saveCachedRecipe } from "@/lib/local-cache";
 
 export async function POST(req: Request) {
   try {
@@ -19,6 +21,16 @@ export async function POST(req: Request) {
         { error: "Ingresá al menos un ingrediente válido." },
         { status: 400 }
       );
+    }
+
+    const recipeKey = buildRecipeKey(ingredients, style, difficulty);
+
+    const cached = findCachedRecipe(recipeKey);
+    if (cached) {
+      return NextResponse.json({
+        ...cached.recipe,
+        source: "cache",
+      });
     }
 
     const prompt = `
@@ -91,7 +103,12 @@ Debes devolver la respuesta en JSON válido con esta estructura exacta:
       );
     }
 
-    return NextResponse.json(recipe);
+    saveCachedRecipe(recipeKey, recipe);
+
+    return NextResponse.json({
+      ...recipe,
+      source: "ai",
+    });
   } catch (error) {
     console.error("Error generando receta:", error);
     return NextResponse.json(
