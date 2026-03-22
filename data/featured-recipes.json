@@ -1,0 +1,14 @@
+[
+  {
+    "id": "chef-1",
+    "title": "Tortilla simple de papa y cebolla",
+    "description": "Una receta clásica, rendidora y fácil.",
+    "type": "chef"
+  },
+  {
+    "id": "chef-2",
+    "title": "Arroz rápido con tomate y huevo",
+    "description": "Ideal para resolver una comida en poco tiempo.",
+    "type": "chef"
+  }
+]
