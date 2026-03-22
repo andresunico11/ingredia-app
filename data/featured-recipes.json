@@ -3,12 +3,21 @@
     "id": "chef-1",
     "title": "Tortilla simple de papa y cebolla",
     "description": "Una receta clásica, rendidora y fácil.",
-    "type": "chef"
+    "type": "chef",
+    "ingredients": ["papa", "cebolla", "huevo"]
   },
   {
     "id": "chef-2",
     "title": "Arroz rápido con tomate y huevo",
     "description": "Ideal para resolver una comida en poco tiempo.",
-    "type": "chef"
+    "type": "chef",
+    "ingredients": ["arroz", "tomate", "huevo"]
+  },
+  {
+    "id": "chef-3",
+    "title": "Salteado rápido de verduras",
+    "description": "Una opción liviana y práctica para aprovechar ingredientes sueltos.",
+    "type": "chef",
+    "ingredients": ["zanahoria", "cebolla", "morrón"]
   }
 ]

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type RecipeResponse = {
   title: string;
@@ -10,6 +10,14 @@ type RecipeResponse = {
   steps: string[];
   final_tip: string;
   source?: "cache" | "ai";
+};
+
+type ChefSuggestion = {
+  id: string;
+  title: string;
+  description: string;
+  type: string;
+  ingredients: string[];
 };
 
 const exampleSets = [
@@ -29,6 +37,7 @@ export default function HomePage() {
   const [recipe, setRecipe] = useState<RecipeResponse | null>(null);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
+  const [chefSuggestion, setChefSuggestion] = useState<ChefSuggestion | null>(null);
 
   const normalizedIngredients = useMemo(() => {
     return ingredients
@@ -36,6 +45,24 @@ export default function HomePage() {
       .map((item) => item.trim())
       .filter(Boolean);
   }, [ingredients]);
+
+useEffect(() => {
+  async function loadChefSuggestion() {
+    try {
+      const response = await fetch("/api/chef-suggestion");
+      const data = await response.json();
+
+      if (!response.ok) return;
+
+      setChefSuggestion(data);
+    } catch (error) {
+      console.error("No se pudo cargar la sugerencia del chef:", error);
+    }
+  }
+
+  loadChefSuggestion();
+}, []);
+
 
   async function generateRecipe() {
     setError("");
@@ -82,6 +109,14 @@ export default function HomePage() {
     await generateRecipe();
   }
 
+  function applyChefSuggestion() {
+  if (!chefSuggestion?.ingredients?.length) return;
+
+  setIngredients(chefSuggestion.ingredients.join(", "));
+  setRecipe(null);
+  setError("");
+}
+
   async function handleRegenerate() {
     await generateRecipe();
   }
@@ -120,6 +155,8 @@ export default function HomePage() {
     setError("");
   }
 
+  
+
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-900">
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
@@ -136,6 +173,51 @@ export default function HomePage() {
             Convertí los ingredientes que tenés en una receta real con IA.
           </p>
         </section>
+
+        {chefSuggestion && (
+  <section className="mb-8">
+    <div className="rounded-3xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+      <div className="mb-2 inline-flex rounded-full border border-amber-300 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-700">
+        Sugerencia del chef
+      </div>
+
+      <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
+        {chefSuggestion.title}
+      </h2>
+
+      <p className="mt-2 max-w-2xl text-sm leading-6 text-neutral-700">
+        {chefSuggestion.description}
+      </p>
+
+      <div className="mt-4">
+        <div className="mb-2 text-sm font-medium text-neutral-700">
+          Ingredientes sugeridos
+        </div>
+
+        <div className="flex flex-wrap gap-2">
+          {chefSuggestion.ingredients.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-amber-300 bg-white px-3 py-1 text-sm text-neutral-700"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-5">
+        <button
+          type="button"
+          onClick={applyChefSuggestion}
+          className="rounded-2xl bg-neutral-950 px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+        >
+          Usar esta sugerencia
+        </button>
+      </div>
+    </div>
+  </section>
+)}
 
         <section className="mb-8">
           <div className="mb-3 text-sm font-medium text-neutral-700">

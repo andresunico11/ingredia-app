@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "key": "pan-queso-tomate__económica__principiante",
+    "recipe": {
+      "title": "Tostadas de queso fundido con tomate",
+      "time_minutes": 15,
+      "ingredients": [
+        "tomate",
+        "queso",
+        "pan"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite"
+      ],
+      "steps": [
+        "Corta el tomate en rodajas finas y resérvalas.",
+        "Corta el queso en rebanadas o rallado, según lo que tengas disponible.",
+        "Tuesta ligeramente las rebanadas de pan en una sartén o tostadora, para que queden crujientes por fuera y firmes para soportar el queso.",
+        "Coloca las rodajas de tomate sobre cada rebanada de pan tostado. Opcionalmente, añade una pizca de sal y pimienta al gusto.",
+        "Coloca el queso encima del tomate en cada tostada de manera uniforme.",
+        "En una sartén limpia y a fuego medio, pon un poco de aceite si quieres para que no se pegue, y calienta cada tostada con cuidado hasta que el queso se funda parcialmente y tome un color ligeramente dorado.",
+        "Sirve las tostadas calientes para disfrutar del queso fundido junto con el frescor del tomate."
+      ],
+      "final_tip": "Para un toque extra, puedes cubrir las tostadas con un poco más de tomate fresco justo antes de servir, aportando frescura y jugosidad."
+    }
+  },
+  {
+    "key": "cebolla-huevo-papa__económica__principiante",
+    "recipe": {
+      "title": "Tortilla sencilla de papa y cebolla",
+      "time_minutes": 30,
+      "ingredients": [
+        "huevo",
+        "papa",
+        "cebolla"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Pela las papas y córtalas en rodajas finas o en cubos pequeños para que se cocinen rápido.",
+        "Pela la cebolla y córtala en juliana o en cubos pequeños, según prefieras.",
+        "Calienta una sartén a fuego medio y añade un poco de aceite si tienes disponible.",
+        "Agrega las papas a la sartén y cocínalas revolviendo ocasionalmente para que se doren y se ablanden. Si ves que se pegan, añade un chorrito de agua para evitar que se quemen.",
+        "Cuando las papas estén casi tiernas, agrega la cebolla y sigue cocinando hasta que las papas estén completamente blandas y la cebolla transparente y algo dorada.",
+        "Mientras tanto, bate los huevos en un bol y, si quieres, añade sal y pimienta al gusto.",
+        "Una vez cocidas las papas y cebolla, retira el exceso de aceite si es necesario y mezcla estas verduras con los huevos batidos en la sartén.",
+        "Distribuye bien la mezcla y cocina a fuego medio-bajo para que el huevo cuaje sin quemarse, puedes tapar la sartén para ayudar a que se cocine parejo por encima.",
+        "Cuando notes que la tortilla está firme por debajo, con cuidado voltea la tortilla usando un plato para cocinarla por el otro lado hasta que esté completamente cocida.",
+        "Retira la tortilla del fuego y déjala reposar un par de minutos antes de cortar y servir."
+      ],
+      "final_tip": "Para facilitar el volteo, usa un plato grande que cubra toda la sartén y hazlo con cuidado para evitar que se rompa la tortilla."
+    }
+  },
+  {
+    "key": "arroz-carne-palta__económica__principiante",
+    "recipe": {
+      "title": "Salteado económico de carne con arroz y palta",
+      "time_minutes": 30,
+      "ingredients": [
+        "palta",
+        "carne",
+        "arroz"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Lava bien el arroz bajo el chorro de agua fría hasta que el agua salga clara para eliminar el exceso de almidón.",
+        "En una olla mediana, coloca el arroz junto con el doble de cantidad de agua (por ejemplo, 1 taza de arroz por 2 tazas de agua). Añade una pizca de sal si tienes disponible.",
+        "Haz que el agua hierva, luego baja el fuego al mínimo, cubre la olla y cocina el arroz por aproximadamente 15 minutos o hasta que esté tierno y el agua se haya absorbido. Apaga el fuego y deja reposar tapado mientras preparas la carne.",
+        "Corta la carne en tiras pequeñas o trozos del tamaño de un bocado para que se cocinen rápido y de manera uniforme.",
+        "Calienta una cucharada de aceite en una sartén grande a fuego medio-alto. Cuando el aceite esté caliente, añade la carne.",
+        "Sazona la carne con sal y pimienta al gusto, y saltea durante 8-10 minutos hasta que esté bien cocida y dorada, revolviendo constantemente para que no se pegue.",
+        "Mientras la carne se cocina, pela la palta, quita el hueso y corta la pulpa en cubos medianos.",
+        "Una vez que la carne esté lista, mezcla el arroz cocido con la carne directamente en la sartén para integrarlos y calentar todo junto durante 2-3 minutos.",
+        "Retira del fuego y sirve el arroz con carne en platos individuales, colocando los cubos de palta encima para aportar frescura y cremosidad."
+      ],
+      "final_tip": "Para un plato más sabroso, asegúrate de cortar la carne en trozos pequeños para que se cocinen rápido y se mezclen bien con el arroz. La palta debe añadirse al final para que mantenga su textura y sabor fresco."
+    }
+  },
+  {
+    "key": "arroz-carne-palta__económica__avanzado",
+    "recipe": {
+      "title": "Tazón nutritivo de carne salteada con arroz y palta",
+      "time_minutes": 50,
+      "ingredients": [
+        "carne",
+        "palta",
+        "arroz"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Lava el arroz bajo agua fría hasta que el agua salga clara para eliminar el almidón.",
+        "En una olla mediana, agrega el arroz lavado con el doble de volumen de agua (por ejemplo, 1 taza de arroz con 2 de agua). Añade una pizca de sal y lleva a ebullición a fuego alto.",
+        "Cuando hierva, reduce el fuego al mínimo, tapa la olla y cocina durante 18-20 minutos o hasta que el agua se absorba por completo y el arroz esté tierno. Retira del fuego y deja reposar tapado.",
+        "Mientras se cocina el arroz, corta la carne en tiras finas o cubos pequeños para facilitar una cocción rápida y uniforme.",
+        "Calienta una sartén a fuego medio-alto y añade un poco de aceite, si dispones.",
+        "Cuando el aceite esté caliente, añade la carne y sazona con sal y pimienta al gusto.",
+        "Saltea la carne durante 7-10 minutos, revolviendo frecuentemente para que se cocine bien y quede dorada por fuera pero jugosa por dentro.",
+        "Mientras tanto, pela la palta y córtala en cubos medianos para preservar su textura y sabor fresco.",
+        "Una vez que el arroz esté listo, mezcla suavemente para que quede suelto.",
+        "En un tazón grande, coloca una base de arroz, añade la carne salteada encima y termina con los cubos de palta fresca distribuidos alrededor o encima.",
+        "Opcionalmente, ajusta la sal y pimienta si es necesario y mezcla ligeramente antes de servir."
+      ],
+      "final_tip": "Para un mejor balance de textura, sirve el plato inmediatamente después de armarlo para que la palta mantenga su frescura y la carne su jugosidad."
+    }
+  }
+]
