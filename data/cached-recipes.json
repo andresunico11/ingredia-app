@@ -118,5 +118,96 @@
       ],
       "final_tip": "Para un mejor balance de textura, sirve el plato inmediatamente después de armarlo para que la palta mantenga su frescura y la carne su jugosidad."
     }
+  },
+  {
+    "key": "pan-queso-tomate__casera__principiante",
+    "recipe": {
+      "title": "Tostada casera de tomate y queso",
+      "time_minutes": 15,
+      "ingredients": [
+        "tomate",
+        "queso",
+        "pan"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite"
+      ],
+      "steps": [
+        "Lava el tomate y córtalo en rodajas finas.",
+        "Corta el queso en rebanadas delgadas o en trozos pequeños para que se derrita mejor.",
+        "Tuesta ligeramente las rebanadas de pan en una sartén o tostadora hasta que estén doradas por ambos lados.",
+        "Si decides usar aceite, añade un poco de aceite sobre las rebanadas de pan tostado para darle más sabor.",
+        "Coloca las rodajas de tomate sobre las tostadas, asegurándote de cubrir bien la superficie.",
+        "Agrega el queso encima del tomate, distribuyéndolo uniformemente.",
+        "Salpimienta ligeramente al gusto si decides usar sal y pimienta.",
+        "Coloca las tostadas con tomate y queso en la sartén a fuego bajo. Cubre con una tapa para que el queso se derrita lentamente, durante unos 5-7 minutos.",
+        "Cuando el queso esté fundido y burbujeante, retira las tostadas del fuego y sirve inmediatamente."
+      ],
+      "final_tip": "Si quieres que el tomate suelte menos líquido, puedes salar un poco las rodajas y dejarlas reposar unos minutos sobre papel absorbente antes de montar la tostada."
+    }
+  },
+  {
+    "key": "batata-carne picada-choclo-jamon-palta__casera__principiante",
+    "recipe": {
+      "title": "Cazuela casera de carne picada con batata, choclo y palta",
+      "time_minutes": 40,
+      "ingredients": [
+        "palta",
+        "jamon",
+        "choclo",
+        "batata",
+        "carne picada"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Pela y corta la batata en cubos medianos. Coloca los cubos en una olla con agua suficiente para cubrirlos y una pizca de sal. Cocina a fuego medio hasta que estén tiernos, aproximadamente 15 minutos. Escurre y reserva.",
+        "Mientras se cocina la batata, corta el jamón en tiras pequeñas o cubos, y el choclo en granos si es en mazorca.",
+        "En una sartén grande, calienta un poco de aceite a fuego medio. Añade la carne picada y cocina, revolviendo, hasta que esté bien dorada y cocida por completo. Si quieres, agrega sal y pimienta al gusto.",
+        "Incorpora a la carne el jamón y el choclo y mezcla bien. Cocina junto por 5 minutos para que los sabores se integren.",
+        "Agrega la batata cocida a la mezcla de carne y mezcla suavemente para no deshacer los cubos. Cocina todo junto por 2 minutos más para que se caliente.",
+        "Mientras tanto, pela la palta y córtala en cubos o láminas.",
+        "Sirve la mezcla caliente en platos y coloca la palta fresca encima como guarnición, aportando un contraste de textura y frescura."
+      ],
+      "final_tip": "La palta se oxida rápido, así que córtala justo antes de servir para que mantenga su color y frescura. Puedes usar el jugo de la batata para dar un poco de humedad si la mezcla resulta seca."
+    }
+  },
+  {
+    "key": "batata-carne picada-choclo-jamon-palta__casera__intermedio",
+    "recipe": {
+      "title": "Pastel de carne y batata con toque de palta y choclo",
+      "time_minutes": 60,
+      "ingredients": [
+        "palta",
+        "jamon",
+        "choclo",
+        "batata",
+        "carne picada"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Pelar las batatas y cortarlas en cubos medianos. Colocar en una olla con agua suficiente para cubrirlas y llevar a hervir hasta que estén suaves, aproximadamente 20 minutos.",
+        "Mientras se cocinan las batatas, picar finamente el jamón y reservar.",
+        "En una sartén grande a fuego medio, agregar un poco de aceite y dorar la carne picada, agregando sal y pimienta al gusto. Cuando la carne esté casi cocida, añadir el jamón picado y el choclo (previamente escurrido si es de lata) y mezclar bien. Cocinar 5 minutos más para integrar los sabores.",
+        "Una vez que las batatas estén tiernas, escurrirlas bien y aplastarlas con un tenedor o pisapuré. Durante el aplastado, agregar un poco de sal y pimienta para darle sabor, y un chorrito de agua o aceite para conseguir una textura cremosa sin que quede seca.",
+        "Precalentar el horno a 180°C. En una fuente para horno, colocar una capa con la mezcla de carne, jamón y choclo, presionando ligeramente para emparejar.",
+        "Encima de esta mezcla, distribuir el puré de batata de manera uniforme, alisando la superficie con una espátula.",
+        "Lavar y cortar la palta en rodajas finas. Colocar las rodajas sobre la capa de batata, decorando la superficie.",
+        "Llevar el pastel al horno y cocinar durante 20 minutos, para que los sabores se integren y la superficie quede ligeramente dorada.",
+        "Retirar del horno y dejar reposar 5 minutos antes de servir para que el pastel compacte mejor."
+      ],
+      "final_tip": "Para un pastel más jugoso, puedes untar ligeramente la fuente con aceite antes de colocar la mezcla de carne. Además, la palta debe colocarse justo antes de servir si prefieres evitar que se oxide mucho."
+    }
   }
 ]
