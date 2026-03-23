@@ -209,5 +209,34 @@
       ],
       "final_tip": "Para un pastel más jugoso, puedes untar ligeramente la fuente con aceite antes de colocar la mezcla de carne. Además, la palta debe colocarse justo antes de servir si prefieres evitar que se oxide mucho."
     }
+  },
+  {
+    "key": "cebolla-huevo-papa__casera__principiante",
+    "recipe": {
+      "title": "Tortilla rústica de papa y cebolla",
+      "time_minutes": 30,
+      "ingredients": [
+        "papa",
+        "cebolla",
+        "huevo"
+      ],
+      "optional": [
+        "sal",
+        "pimienta",
+        "aceite",
+        "agua"
+      ],
+      "steps": [
+        "Pelar y lavar bien las papas. Cortarlas en cubos pequeños o en rodajas finas para que se cocinen rápidamente.",
+        "Pelar la cebolla y cortarla en plumas o en cubos pequeños, según prefieras.",
+        "Calentar un poco de aceite en una sartén a fuego medio. Agregar la cebolla y cocinar hasta que esté transparente y ligeramente dorada, unos 5 minutos.",
+        "Agregar las papas cortadas a la sartén con la cebolla. Salar y pimpear al gusto. Añadir un poco de agua (1-2 cucharadas) para ayudar a cocinar las papas con vapor. Tapar la sartén y cocinar a fuego medio-bajo, moviendo ocasionalmente, hasta que las papas estén tiernas, aproximadamente 15 minutos.",
+        "Mientras tanto, batir los huevos en un recipiente con una pizca de sal y pimienta.",
+        "Cuando las papas y la cebolla estén cocidas, retirar el exceso de agua de la sartén si quedara. Verter los huevos batidos sobre las papas y cebolla, asegurándote que se reparta bien.",
+        "Cocinar a fuego bajo, sin tapar, hasta que el huevo esté cuajado por toda la base. Puedes levantar un poco los bordes con una espátula para que el huevo líquido llegue abajo.",
+        "Con ayuda de un plato o una tapa, darle la vuelta a la tortilla cuidadosamente y cocinar el otro lado por 3-5 minutos más hasta que esté bien cuajada y dorada a tu gusto."
+      ],
+      "final_tip": "Si quieres una textura más suave, tapa la sartén mientras haces la tortilla para que el huevo se cocine con vapor y quede jugoso por dentro."
+    }
   }
 ]
